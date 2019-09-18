@@ -1,0 +1,42 @@
+body {
+    background-color: #fff;
+}
+
+header.head {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+header.head,
+.config {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-btn {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: #314584;
+}
+
+.main-nav .main-menu {
+    visibility: hidden;
+}
+
+.main-nav .main-menu.visible {
+    visibility: visible;
+}
+
+
+
+@media (min-width: 769px) {
+    .main-nav .burger-btn {
+        display: none;
+    }
+
+    .main-nav .main-menu {
+        visibility: visible;
+        display: flex;
+    }
+}
