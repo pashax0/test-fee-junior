@@ -1,6 +1,5 @@
 body {
     background-color: #fff;
-    padding: 3px;
 }
 
 header.head {
@@ -56,6 +55,29 @@ header.head,
     width: 370px;
     margin: 7px;
     background-color: #C3D0D8;
+}
+
+.contact form>* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="email"]:invalid {
+    color: red;
+}
+
+.foot {
+    text-align: center;
+    background-color: #314584;
+}
+
+.foot h3 {
+    color: #FF3946;
+}
+
+.social a {
+    margin: 0 2rem;
 }
 
 
