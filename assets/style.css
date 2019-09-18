@@ -1,5 +1,6 @@
 body {
     background-color: #fff;
+    padding: 3px;
 }
 
 header.head {
@@ -21,11 +22,40 @@ header.head,
 }
 
 .main-nav .main-menu {
-    visibility: hidden;
+    display: none;
 }
 
 .main-nav .main-menu.visible {
-    visibility: visible;
+    position: absolute;
+    display: inherit;
+    background-color: #fff;
+}
+
+.examples {
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    display: none;
+}
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbs div {
+    height: 280px;
+    width: 370px;
+    margin: 7px;
+    background-color: #C3D0D8;
 }
 
 
@@ -39,4 +69,9 @@ header.head,
         visibility: visible;
         display: flex;
     }
+
+    .banner img {
+        display: inherit;
+    }
+    
 }
