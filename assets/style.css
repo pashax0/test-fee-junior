@@ -1,10 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fff;
 }
 
-header.head {
+header {
     max-width: 1700px;
-    margin: 0 auto;
+}
+
+footer.foot {
+    margin-bottom: 0;
+}
+
+header,
+main {
+    padding: 4px;
 }
 
 header.head,
@@ -39,6 +51,8 @@ header.head,
 .banner {
     display: flex;
     align-items: center;
+    max-width: 1170px;
+    margin: 80px auto;
 }
 
 .banner img {
@@ -48,6 +62,8 @@ header.head,
 .thumbs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 370px;
 }
 
 .thumbs div {
@@ -57,14 +73,14 @@ header.head,
     background-color: #C3D0D8;
 }
 
-.contact form>* {
+.contact form>textarea {
     width: 100%;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 input[type="email"]:invalid {
-    color: red;
+    color: #FF3946;
 }
 
 .foot {
@@ -72,17 +88,97 @@ input[type="email"]:invalid {
     background-color: #314584;
 }
 
-.foot h3 {
-    color: #FF3946;
+.btn {
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+}
+
+.examples .btn,
+.contact .btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.red {
+    background-color: #FF3946;
 }
 
 .social a {
     margin: 0 2rem;
 }
 
+/* Fonts and text format */
 
+/* @font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-Regular.ttf')
+} */
+
+html,
+form * {
+    font-size: 18px;
+    font-family: 'Work Sans', 'AdobeInvisFont', 'MyriadPro';
+    color: #314584;
+    font-weight: 600;
+}
+
+* {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-menu a {
+    text-transform: capitalize;
+}
+
+.main-menu a::after {
+    content: '.';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+.foot h2,
+.contact legend {
+    color: #FF3946;
+}
+
+p,
+small {
+    font-weight: 400;
+}
+
+small {
+    color: #fff;
+}
+
+.contact legend,
+.lang {
+    text-transform: uppercase;
+}
+
+
+/* PC and tablet styles */
 
 @media (min-width: 769px) {
+    header,
+    main,
+    footer {
+        margin: 80px 0;
+        
+    }
+
     .main-nav .burger-btn {
         display: none;
     }
