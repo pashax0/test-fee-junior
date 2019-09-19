@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    max-width: 1700px;
+}
+
+footer.foot {
+    margin-bottom: 0;
+}
+
+header,
+main {
+    padding: 4px;
+}
+
+header.head,
+.config {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-btn {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: #314584;
+}
+
+.main-nav .main-menu {
+    display: none;
+}
+
+.main-nav .main-menu.visible {
+    position: absolute;
+    display: inherit;
+    background-color: #fff;
+}
+
+.examples {
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    margin: 80px auto;
+}
+
+.banner img {
+    display: none;
+}
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 370px;
+}
+
+.thumbs div {
+    height: 280px;
+    width: 370px;
+    margin: 7px;
+    background-color: #C3D0D8;
+}
+
+.contact form>textarea {
+    width: 100%;
+    margin: 0;
+    /* padding: 0; */
+}
+
+input[type="email"]:invalid {
+    color: #FF3946;
+}
+
+.foot {
+    text-align: center;
+    background-color: #314584;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+}
+
+.examples .btn,
+.contact .btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.red {
+    background-color: #FF3946;
+}
+
+.social a {
+    margin: 0 2rem;
+}
+
+/* Fonts and text format */
+
+/* @font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-Regular.ttf')
+} */
+
+html,
+form * {
+    font-size: 18px;
+    font-family: 'Work Sans', 'AdobeInvisFont', 'MyriadPro';
+    color: #314584;
+    font-weight: 600;
+}
+
+* {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-menu a {
+    text-transform: capitalize;
+}
+
+.main-menu a::after {
+    content: '.';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+.foot h2,
+.contact legend {
+    color: #FF3946;
+}
+
+p,
+small {
+    font-weight: 400;
+}
+
+small {
+    color: #fff;
+}
+
+.contact legend,
+.lang {
+    text-transform: uppercase;
+}
+
+
+/* PC and tablet styles */
+
+@media (min-width: 769px) {
+    /* header,
+    main,
+    footer {
+        margin: 80px 0;
+        
+    }
+
+    .main-nav .burger-btn {
+        display: none;
+    }
+
+    .main-nav .main-menu {
+        visibility: visible;
+        display: flex;
+    }
+
+    .banner img {
+        display: inherit;
+    } */
+
+    .head {
+        grid-area: head;
+    }
+    main {
+        grid-area: main;
+    }
+    .foot {
+        grid-area: foot;
+    }
+
+    /* body {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 1170px) 1fr;
+        grid-template-areas:
+        "head head head"
+        ". main ."
+        "foot foot foot"
+    } */
+
+    .banner img {
+        display: inherit;
+    }
+    
+}
