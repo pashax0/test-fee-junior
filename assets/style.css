@@ -30,8 +30,10 @@ footer {
     background-color: #314584;
 }
 
-.banner img {
+.banner {
     display: none;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .thumbs {
@@ -347,7 +349,6 @@ input[type="email"]:invalid {
     }
 
     .header,
-    .banner,
     .examples {
         margin-top: 6.8rem;
         margin-bottom: 3.5rem;
@@ -358,9 +359,16 @@ input[type="email"]:invalid {
     }
 
     .banner {
+        display: block;
         grid-area: banner;
         justify-self: end;
-        margin-right: 10px;
+        padding-top: 6.8rem;
+        padding-bottom: 3.5rem;
+        padding-right: 10px;
+    }
+
+    .banner img {
+        float: right;
     }
     .examples {
         grid-area: examples;
@@ -388,10 +396,6 @@ input[type="email"]:invalid {
 
     legend+h2 {
         padding-top: 0;
-    }
-
-    .banner img {
-        display: inherit;
     }
 
     .wrapper {

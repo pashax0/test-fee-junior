@@ -6,3 +6,17 @@ document.onclick = (e) => {
         mainMenu.classList.remove("visible");
     }
 };
+
+$(document).ready(function(){
+    $('.slider').slick({
+        // fade: true,
+        dots: true,
+    });
+});
+
+// $(document).ready(function(){
+//     $('.sly').slick({
+//         // fade: true,
+//         dots: true,
+//     });
+// });
