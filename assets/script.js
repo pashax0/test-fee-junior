@@ -1,9 +1,9 @@
-let mainMenu = document.querySelector('.main-menu')
+let mainNav = document.querySelector('.main-menu')
 document.onclick = (e) => {
-    if (e.target.className == "burger-btn") {
-        mainMenu.classList.toggle("visible");
+    if (e.target.closest(".burger-btn")) {
+        mainNav.classList.toggle("visible");
     } else {
-        mainMenu.classList.remove("visible");
+        mainNav.classList.remove("visible");
     }
 };
 

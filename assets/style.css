@@ -10,6 +10,7 @@ img {
 }
 
 body {
+    max-width: 100vw;
     background-color: #fff;
 }
 
@@ -58,20 +59,40 @@ footer {
 }
 
 .burger-btn {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
-    background-color: #314584;
 }
 
+.burger-btn div {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #7b92db;
+    transform-origin: center;
+    transition: all .3s ease;
+}
+
+.config {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .main-nav .main-menu {
     position: absolute;
     width: 100%;
-    left: 100vw;
-    transition-delay: 1s;
-    transition-property: left;
+    height: 100%;
+    left: 0;
+    bottom: 100vh;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
 
 }
 
@@ -89,8 +110,7 @@ footer {
 }
 
 .main-nav .main-menu.visible {
-    left: auto;
-    right: 0;
+    top: 50px;
 }
 
 .foot-nav {
@@ -193,11 +213,14 @@ small {
     cursor: pointer;
 }
 
-.config .btn,
 .examples .btn,
 .contact .btn {
     text-align: center;
     margin: 0 auto;
+    color: #FF3946;
+}
+
+.config .btn {
     color: #FF3946;
 }
 
@@ -230,7 +253,7 @@ small {
     padding: 0;
 }
 
-.banner .btns {
+.btns {
     display: flex;
     justify-content: center;
 }
@@ -330,8 +353,9 @@ input[type="email"]:invalid {
     }
 
     .main-nav .main-menu {
-        position: relative;
-        left: auto;
+        position: static;
+        top: auto;
+        right: auto;
     }
 
     .burger-btn {
@@ -420,6 +444,14 @@ input[type="email"]:invalid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin-top: 55px;
+    }
+
+    .btns {
+        display: block;
+        margin-left: 5px;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        padding: 1rem 0;
     }
 
     /* .top-nav {
