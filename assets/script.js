@@ -9,14 +9,7 @@ document.onclick = (e) => {
 
 $(document).ready(function(){
     $('.slider').slick({
-        // fade: true,
+        fade: true,
         dots: true,
     });
 });
-
-// $(document).ready(function(){
-//     $('.sly').slick({
-//         // fade: true,
-//         dots: true,
-//     });
-// });
